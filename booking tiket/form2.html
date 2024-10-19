@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transportation Booking Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="form2.css" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="form-container p-4 border rounded">
+            <h2 class="mb-4 text-center">Transportation Booking Form</h2>
+            <form action="/submit-booking" method="post">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Enter full name"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="service" class="form-label">Select Service:</label>
+                <select
+                  id="service"
+                  name="service"
+                  class="form-select"
+                  required
+                >
+                  <option value="">Select a service</option>
+                  <option value="daily-car-rental">Daily Car Rental</option>
+                  <option value="airport-transfer">Airport Transfer</option>
+                  <option value="city-tour">Full Day City Tour</option>
+                  <option value="mini-bus-rental">Mini Bus Rental</option>
+                </select>
+              </div>
+
+              <div id="car-options" class="service-options mb-3">
+                <label for="car-type" class="form-label"
+                  >Choose Car Type:</label
+                >
+                <select id="car-type" name="car-type" class="form-select">
+                  <option value="economy-car">Economy Car</option>
+                  <option value="family-suv">Family SUV</option>
+                  <option value="luxury-car">Luxury Car</option>
+                </select>
+              </div>
+
+              <div id="airport-options" class="service-options mb-3">
+                <label for="vehicle-type" class="form-label"
+                  >Choose Vehicle:</label
+                >
+                <select
+                  id="vehicle-type"
+                  name="vehicle-type"
+                  class="form-select"
+                >
+                  <option value="sedan">Sedan (1-4 people)</option>
+                  <option value="van">Van (5-7 people)</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="date" class="form-label">Booking Date:</label>
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="time" class="form-label">Pick-up Time:</label>
+                <input
+                  type="time"
+                  id="time"
+                  name="time"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Book Now
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4 mt-md-0">
+          <div class="promo-container">
+            <img
+              src="../assets/ilustrasi.jpg"
+              alt="Tourist Spot"
+              class="img-fluid rounded mb-3"
+            />
+            <div class="promo-description text-center">
+              <p>
+                Discover Your Perfect Escape. Search and book the best travel
+                deals with ease on Travelin. We offer a wide range of
+                destinations, competitive prices, and exceptional services. Plan
+                your dream trip now!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

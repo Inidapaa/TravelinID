@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.form-container {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.promo-container {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.247);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.promo-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.promo-description {
+    margin-top: 20px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+form, .promo-description {
+    display: flex;
+    flex-direction: column;
+}
+
+label, p {
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d6efd(0, 0, 0, 0.623);
+}
+
+.service-options {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}

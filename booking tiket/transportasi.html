@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transportation Services</title>
+    <link rel="stylesheet" href="trp.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Affordable Transportation Services</h1>
+    </header>
+
+    <div class="container">
+      <section id="services">
+        <h2>Our Service Options</h2>
+
+        <div class="service">
+          <h3>Daily Car Rental</h3>
+          <p>
+            Enjoy the freedom to drive with a variety of car options for your
+            needs.
+          </p>
+          <ul>
+            <li>Economy Car: <span class="price">Rp 300,000/day</span></li>
+            <li>Family SUV: <span class="price">Rp 500,000/day</span></li>
+            <li>Luxury Car: <span class="price">Rp 1,000,000/day</span></li>
+          </ul>
+          <p>Includes basic insurance and unlimited mileage.</p>
+        </div>
+
+        <div class="service">
+          <h3>Airport Transfer</h3>
+          <p>
+            Start and end your trip comfortably without worrying about
+            transportation.
+          </p>
+          <ul>
+            <li>
+              Sedan (1-4 people): <span class="price">Rp 200,000/one way</span>
+            </li>
+            <li>
+              Van (5-7 people): <span class="price">Rp 300,000/one way</span>
+            </li>
+          </ul>
+          <p>Includes 30 minutes waiting time and luggage assistance.</p>
+        </div>
+
+        <div class="service">
+          <h3>Full Day City Tour</h3>
+          <p>Explore the city comfortably with an experienced tour guide.</p>
+          <ul>
+            <li>
+              Standard Package (8 hours):
+              <span class="price">Rp 800,000/group (max. 4 people)</span>
+            </li>
+            <li>
+              Premium Package (10 hours):
+              <span class="price">Rp 1,200,000/group (max. 6 people)</span>
+            </li>
+          </ul>
+          <p>
+            Includes tour guide, air-conditioned transport, and mineral water.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>Mini Bus Rental</h3>
+          <p>Ideal for large groups or special events.</p>
+          <ul>
+            <li>20-seat Bus: <span class="price">Rp 1,500,000/day</span></li>
+            <li>30-seat Bus: <span class="price">Rp 2,000,000/day</span></li>
+          </ul>
+          <p>Includes professional driver and fuel.</p>
+        </div>
+
+        <div class="button-group">
+          <a href="form2.html" class="cta-button">Book Service Now</a>
+          <a href="#" class="cta-button" onclick="confirmCancel()">Cancel</a>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    function confirmCancel() {
+      if (confirm("Are you sure you want to cancel?")) {
+        window.location.href = "tiket.html";
+      }
+    }
+  </script>
+</html>
